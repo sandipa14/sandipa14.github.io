@@ -1,0 +1,26 @@
+<header id="navigation" class="p-navigation is-dark is-sticky">
+  <div class="p-navigation__row--25-75">
+    <div class="p-navigation__banner">
+      <div class="p-navigation__tagged-logo">
+        <a class="p-navigation__link" href="/">
+          <span class="p-navigation__logo-title">Sandipa Roy</span>
+        </a>
+      </div>
+      <ul class="p-navigation__items">
+        <li class="p-navigation__item">
+          <button class="js-menu-button p-navigation__link">Menu</button>
+        </li>
+      </ul>
+    </div>
+    <nav class="p-navigation__nav" aria-label="Example main">
+      <ul class="p-navigation__items">
+        {% for url in site.data.navigation %}
+        <li class="p-navigation__item{% if page.url == url.url %} is-selected{% endif %}">
+          <a class="p-navigation__link" href="{{ url.url }}">{{ url.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+<script src="static_files/js/nav.js"></script>
