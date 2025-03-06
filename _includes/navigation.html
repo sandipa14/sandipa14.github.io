@@ -21,7 +21,7 @@
             <ul class="p-navigation__dropdown js-dropdown-nav-list js-navigation-sliding-panel" id="{{ page.slug }}-menu" aria-hidden="true">
               {% for child in page.children %}
               <li>
-                <a href="{{page.slug}}/{{ child.url }}" class="p-navigation__dropdown-item">{{ child.title }}</a>
+                <a href="{{page.slug}}{{ child.url }}" class="p-navigation__dropdown-item">{{ child.title }}</a>
               </li>
               {% endfor %}
             </ul>
