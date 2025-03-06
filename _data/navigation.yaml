@@ -3,6 +3,7 @@
 - title: Publications
   url: /publications
 - title: Projects
+  slug: projects
   children:
   - title: Sahaj Path
     url: /sahaj-path
