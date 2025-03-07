@@ -36,7 +36,7 @@ layout: default
         <div class="row">
           <div class="col-4">
             <div class="p-media-object">
-              <img src="sandipa-profile.jpeg"
+              <img src="/static_files/images/sandipa-profile.jpeg"
                    class="p-media-object__image is-round"
                    alt="">
               <div class="p-media-object__details">
@@ -52,7 +52,7 @@ layout: default
           </div>
           <div class="col-4">
             <div class="p-media-object">
-              <img src="kuntal-ghosh.png" class="p-media-object__image is-round" alt="">
+              <img src="/static_files/images/kuntal-ghosh.png" class="p-media-object__image is-round" alt="">
               <div class="p-media-object__details">
                 <h3 class="p-media-object__title">Dr. Kuntal Ghosh</h3>
                 <p class="p-media-object__content">Mentor</p>
@@ -66,17 +66,12 @@ layout: default
           </div>
           <div class="col-4">
             <div class="p-media-object">
-              <img src="abhigyan-profile.jpg"
+              <img src="/static_files/images/abhigyan-profile.jpg"
                    class="p-media-object__image is-round"
                    alt="">
               <div class="p-media-object__details">
                 <h3 class="p-media-object__title">Abhigyan Ghosh</h3>
                 <p class="p-media-object__content">Developer</p>
-                <ul class="p-media-object__meta-list">
-                  <li class="p-media-object__meta-list-item--location">
-                    <span class="u-off-screen">Location:</span> Kolkata
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -157,195 +152,216 @@ layout: default
   <div class="row">
     <h1>সহজ পাঠ ISL videos</h1>
   </div>
-  <div class="row--50-50">
-    <!-- 20-21 -->
-    <div class="col">
-      <div class="p-card u-no-padding">
-        <div class="p-card__image">
-          <div class="u-embedded-media">
-            <iframe class="u-embedded-media__element"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/UNhkCvxkO_Y?si=b60jWqThePQdcCD-"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
+  <div class="u-fixed-width">
+    <div class="p-tabs">
+      <div class="p-tabs__list" role="tablist" aria-label="Sahaj Path ISL videos">
+        <div class="p-tabs__item">
+          <button class="p-tabs__link" role="tab" aria-selected="true" aria-controls="part-1-tab" id="part-1">প্রথম ভাগ</button>
         </div>
-        <div class="p-card__inner">
-          <h3>বনে থাকে বাঘ</h3>
+        <div class="p-tabs__item">
+          <button class="p-tabs__link" role="tab" aria-selected="false" aria-controls="part-2-tab" id="part-2" tabindex="-1">দ্বিতীয় ভাগ</button>
         </div>
       </div>
     </div>
-    <!-- 21-22 -->
-    <div class="col">
-      <div class="p-card u-no-padding">
-        <div class="p-card__image">
-          <div class="u-embedded-media">
-            <iframe class="u-embedded-media__element"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/36z47fYwrFU?si=V_JatyJhRGP0PSP4"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+    <div tabindex="0" role="tabpanel" id="part-1-tab" aria-labelledby="part-1">
+      <div class="row--50-50">
+        <!-- 20-21 -->
+        <div class="col">
+          <div class="p-card u-no-padding">
+            <div class="p-card__image">
+              <div class="u-embedded-media">
+                <iframe class="u-embedded-media__element"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/UNhkCvxkO_Y?si=b60jWqThePQdcCD-"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-card__inner">
+              <h3>বনে থাকে বাঘ</h3>
+            </div>
           </div>
         </div>
-        <div class="p-card__inner">
-          <h3>আলো হয় গেল ভয়</h3>
+        <!-- 21-22 -->
+        <div class="col">
+          <div class="p-card u-no-padding">
+            <div class="p-card__image">
+              <div class="u-embedded-media">
+                <iframe class="u-embedded-media__element"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/36z47fYwrFU?si=V_JatyJhRGP0PSP4"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-card__inner">
+              <h3>আলো হয় গেল ভয়</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 24-25 -->
+        <div class="col">
+          <div class="p-card u-no-padding">
+            <div class="p-card__image">
+              <div class="u-embedded-media">
+                <iframe class="u-embedded-media__element"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/ip7ncg93owU?si=6FVXU7uS2ZLuRAVY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-card__inner">
+              <h3>কালো রাতি গেল ঘুচে</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 27-28 -->
+        <div class="col">
+          <div class="p-card u-no-padding">
+            <div class="p-card__image">
+              <div class="u-embedded-media">
+                <iframe class="u-embedded-media__element"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/bg4f7pnUqlE?si=Ow8HoR1IqSvaUOnb"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-card__inner">
+              <h3>নাম তার মতিবিল</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 31-32 -->
+        <div class="col">
+          <div class="p-card u-no-padding">
+            <div class="p-card__image">
+              <div class="u-embedded-media">
+                <iframe class="u-embedded-media__element"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/NkgULgQOgYA?si=wZkrqkHZfiAtuEGW"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-card__inner">
+              <h3>ছায়ার ঘোমটা মুখে টানি</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 35-36 -->
+        <div class="col">
+          <div class="p-card u-no-padding">
+            <div class="p-card__image">
+              <div class="u-embedded-media">
+                <iframe class="u-embedded-media__element"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/ZU-A6SzRyRs?si=wmLSp3qwv8Cv3cSw"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-card__inner">
+              <h3>আমাদের ছোট নদী চলে বাঁকে বাঁকে</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 38-39 -->
+        <div class="col">
+          <div class="p-card u-no-padding">
+            <div class="p-card__image">
+              <div class="u-embedded-media">
+                <iframe class="u-embedded-media__element"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/kgRYwkrUdqw?si=JhgsxMgBr1K-ayTx"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-card__inner">
+              <h3>এসেছে শরৎ হিমের পরশ</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 41-42 -->
+        <div class="col">
+          <div class="p-card u-no-padding">
+            <div class="p-card__image">
+              <div class="u-embedded-media">
+                <iframe class="u-embedded-media__element"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/5tA455zB4ek?si=TqbRmMLXJrF6SP2s"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-card__inner">
+              <h3>কাল ছিল ডাল খালি</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 45-46 -->
+        <div class="col">
+          <div class="p-card u-no-padding">
+            <div class="p-card__image">
+              <div class="u-embedded-media">
+                <iframe class="u-embedded-media__element"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/7MxlyM2cCTo?si=MPFdbVGvRrVwyBE9"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-card__inner">
+              <h3>দিনে হই একমতো, রাতে হই আর</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- 24-25 -->
-    <div class="col">
-      <div class="p-card u-no-padding">
-        <div class="p-card__image">
-          <div class="u-embedded-media">
-            <iframe class="u-embedded-media__element"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/ip7ncg93owU?si=6FVXU7uS2ZLuRAVY"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="p-card__inner">
-          <h3>কালো রাতি গেল ঘুচে</h3>
-        </div>
-      </div>
-    </div>
-    <!-- 27-28 -->
-    <div class="col">
-      <div class="p-card u-no-padding">
-        <div class="p-card__image">
-          <div class="u-embedded-media">
-            <iframe class="u-embedded-media__element"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/bg4f7pnUqlE?si=Ow8HoR1IqSvaUOnb"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="p-card__inner">
-          <h3>নাম তার মতিবিল</h3>
-        </div>
-      </div>
-    </div>
-    <!-- 31-32 -->
-    <div class="col">
-      <div class="p-card u-no-padding">
-        <div class="p-card__image">
-          <div class="u-embedded-media">
-            <iframe class="u-embedded-media__element"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/NkgULgQOgYA?si=wZkrqkHZfiAtuEGW"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="p-card__inner">
-          <h3>ছায়ার ঘোমটা মুখে টানি</h3>
-        </div>
-      </div>
-    </div>
-    <!-- 35-36 -->
-    <div class="col">
-      <div class="p-card u-no-padding">
-        <div class="p-card__image">
-          <div class="u-embedded-media">
-            <iframe class="u-embedded-media__element"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/ZU-A6SzRyRs?si=wmLSp3qwv8Cv3cSw"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="p-card__inner">
-          <h3>আমাদের ছোট নদী চলে বাঁকে বাঁকে</h3>
-        </div>
-      </div>
-    </div>
-    <!-- 38-39 -->
-    <div class="col">
-      <div class="p-card u-no-padding">
-        <div class="p-card__image">
-          <div class="u-embedded-media">
-            <iframe class="u-embedded-media__element"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/kgRYwkrUdqw?si=JhgsxMgBr1K-ayTx"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="p-card__inner">
-          <h3>এসেছে শরৎ হিমের পরশ</h3>
-        </div>
-      </div>
-    </div>
-    <!-- 41-42 -->
-    <div class="col">
-      <div class="p-card u-no-padding">
-        <div class="p-card__image">
-          <div class="u-embedded-media">
-            <iframe class="u-embedded-media__element"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/5tA455zB4ek?si=TqbRmMLXJrF6SP2s"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="p-card__inner">
-          <h3>কাল ছিল ডাল খালি</h3>
-        </div>
-      </div>
-    </div>
-    <!-- 45-46 -->
-    <div class="col">
-      <div class="p-card u-no-padding">
-        <div class="p-card__image">
-          <div class="u-embedded-media">
-            <iframe class="u-embedded-media__element"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/7MxlyM2cCTo?si=MPFdbVGvRrVwyBE9"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="p-card__inner">
-          <h3>দিনে হই একমতো, রাতে হই আর</h3>
-        </div>
-      </div>
+  
+    <div tabindex="0" role="tabpanel" id="part-2-tab" aria-labelledby="part-2" hidden="hidden">
+      <p>Coming soon</p>
     </div>
   </div>
+
+  
 </section>
+<script src="/static_files/js/tabs.js"></script>
