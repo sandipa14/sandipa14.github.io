@@ -1,0 +1,47 @@
+<section class="p-section">
+  <div class="row">
+    <h1>সহজ পাঠ ISL videos</h1>
+  </div>
+  <div class="u-fixed-width">
+    <div class="p-tabs">
+      <div class="p-tabs__list"
+           role="tablist"
+           aria-label="Sahaj Path ISL videos">
+        {% for part in site.data.sahaj-path-videos %}
+          <div class="p-tabs__item">
+            <button class="p-tabs__link"
+                    role="tab"
+                    aria-selected="{% if part.part==1 %}true{% else %}false{% endif %}"
+                    aria-controls="part-{{ part.part }}-tab"
+                    id="part-{{ part.part }}">{{ part.title }}</button>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% for part in site.data.sahaj-path-videos %}
+      <div tabindex="{{part.part | minus: 1}}" role="tabpanel" id="part-{{part.part}}-tab" aria-labelledby="part-{{part.part}}" {% if part.part != 1 %}hidden="true"{% endif %}">
+        <div class="row--50-50">
+          {% for video in part.videos %}
+            <div class="col">
+              <div class="p-card u-no-padding">
+                <div class="p-card__image">
+                  <div class="u-embedded-media">
+                    <iframe class="u-embedded-media__element"
+                            width="560"
+                            height="315"
+                            src="{{ video.url }}"
+                            title="{{ video.title }}"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
